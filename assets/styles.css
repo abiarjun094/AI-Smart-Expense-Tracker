@@ -1,0 +1,286 @@
+/* =========================================
+   GLOBAL APP
+========================================= */
+
+.stApp {
+
+    background-color: #020817;
+
+    color: #F8FAFC;
+
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* =========================================
+   PREMIUM SIDEBAR
+========================================= */
+
+section[data-testid="stSidebar"] {
+
+    background: linear-gradient(
+        180deg,
+        #0F172A,
+        #1E293B
+    );
+
+    border-right: 1px solid #334155;
+}
+
+/* Sidebar Navigation */
+
+[data-testid="stSidebarNav"] {
+
+    padding-top: 20px;
+}
+
+/* Sidebar Links */
+
+[data-testid="stSidebarNav"] a {
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #1E293B !important;
+
+    color: white !important;
+
+    padding: 14px 18px !important;
+
+    margin-bottom: 12px;
+
+    border-radius: 14px;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+    font-weight: 500;
+
+    border: 1px solid transparent;
+}
+
+/* Hover Effect */
+
+[data-testid="stSidebarNav"] a:hover {
+
+    background: linear-gradient(
+        90deg,
+        #2563EB,
+        #3B82F6
+    ) !important;
+
+    color: white !important;
+
+    transform: translateX(4px);
+
+    box-shadow: 0px 0px 10px rgba(59,130,246,0.35);
+}
+
+/* Active Page */
+
+[data-testid="stSidebarNav"] a[aria-current="page"] {
+
+    background: linear-gradient(
+        90deg,
+        #2563EB,
+        #3B82F6
+    ) !important;
+
+    color: white !important;
+
+    font-weight: 700;
+
+    box-shadow: 0px 0px 12px rgba(59,130,246,0.4);
+}
+
+/* Sidebar Text */
+
+[data-testid="stSidebarNav"] span {
+
+    font-size: 16px;
+
+    color: white !important;
+}
+
+/* Sidebar List */
+
+[data-testid="stSidebarNav"] ul {
+
+    gap: 10px;
+}
+
+/* =========================================
+   TITLES
+========================================= */
+
+h1, h2, h3, h4 {
+
+    color: #F8FAFC;
+}
+
+/* =========================================
+   METRIC CARDS
+========================================= */
+
+[data-testid="metric-container"] {
+
+    background: linear-gradient(
+        145deg,
+        #111827,
+        #1E293B
+    );
+
+    border: 1px solid #334155;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Metric Hover */
+
+[data-testid="metric-container"]:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0px 6px 18px rgba(59,130,246,0.2);
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.stButton > button {
+
+    background: linear-gradient(
+        90deg,
+        #2563EB,
+        #3B82F6
+    );
+
+    color: white;
+
+    border-radius: 12px;
+
+    border: none;
+
+    padding: 12px 24px;
+
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Button Hover */
+
+.stButton > button:hover {
+
+    transform: scale(1.02);
+
+    box-shadow: 0px 0px 10px rgba(59,130,246,0.35);
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.stTextInput input,
+.stNumberInput input,
+.stDateInput input,
+textarea {
+
+    background-color: #1E293B !important;
+
+    color: white !important;
+
+    border-radius: 10px !important;
+
+    border: 1px solid #334155 !important;
+}
+
+/* Selectbox */
+
+.stSelectbox div[data-baseweb="select"] {
+
+    background-color: #1E293B !important;
+
+    border-radius: 10px !important;
+}
+
+/* =========================================
+   TABLES
+========================================= */
+
+[data-testid="stDataFrame"] {
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    border: 1px solid #334155;
+}
+
+/* =========================================
+   ALERT BOXES
+========================================= */
+
+.stSuccess,
+.stInfo,
+.stWarning,
+.stError {
+
+    border-radius: 12px;
+
+    padding: 12px;
+}
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+hr {
+
+    border-color: #334155;
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+
+    background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #3B82F6;
+
+    border-radius: 10px;
+}
+
+/* =========================================
+   PAGE SPACING
+========================================= */
+
+.block-container {
+
+    padding-top: 2rem;
+
+    padding-bottom: 2rem;
+}
